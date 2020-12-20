@@ -1,0 +1,38 @@
+.blogpost {
+  background-color: #323232;
+}
+
+.blog__container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.blog__image {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 5px;
+}
+
+.blog__top,
+.blog__info {
+  margin: 1.5rem 0;
+}
+
+.blog__subheading {
+  line-height: 2;
+}
+
+.blog__para {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .blog__container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+}

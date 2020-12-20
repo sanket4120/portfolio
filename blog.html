@@ -16,7 +16,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/aos.css" />
+    <style>
+      .blog {
+        background-color: #323232;
+      }
+      .blog .card {
+        background-color: #252525;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -35,134 +42,13 @@
           <i class="fas fa-bars hide-lg pointer" id="menu-open"></i>
         </header>
 
-        <div class="intro">
-          <h1>
-            Hi! 👋 -- My name is <span class="highlight">Sanket</span>, I'm a
-            <span class="highlight">developer</span> located in Nashik, India.
-          </h1>
-          <a href="./work.html" class="btn btn__lg"
-            >view my work <i class="fas fa-chevron-right"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobile__links hide-lg">
-      <i class="fas fa-times pointer" id="menu-close"></i>
-      <ul>
-        <li><a href="./index.html" class="link">home</a></li>
-        <li><a href="./work.html" class="link">work</a></li>
-        <li><a href="./blog.html" class="link">blog</a></li>
-      </ul>
-    </div>
-
-    <div class="about" id="about">
-      <div class="container">
-        <div class="about__container">
-          <h2>about <span class="highlight">me</span></h2>
-          <p>
-            I'm Sanket, self-taught developer specializing in front-end
-            development. I have always been passionate about creating
-            user-interfaces that speak, and are a pleasure to use, I like to
-            tackle challenges and I am always open to collaboration.
-          </p>
-        </div>
-        <div class="skill__section">
-          <h4>what skills i have</h4>
-          <div class="skills">
-            <span class="btn btn__md">HTML5</span>
-            <span class="btn btn__md">CSS3</span>
-            <span class="btn btn__md">JavaScript</span>
-            <span class="btn btn__md">Git</span>
-            <span class="btn btn__md">NodeJS</span>
-            <span class="btn btn__md">ReactJS</span>
-            <span class="btn btn__md">Web Hosting</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="work">
-      <div class="container">
-        <h2>work</h2>
-        <div class="card__container">
-          <div class="card">
-            <div class="card__image">
-              <img src="./images/work/devjobs.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h4>Devjobs</h4>
-              <p class="lang">ReactJS/HTML/CSS/API</p>
-              <p>
-                devjobs is a job listing site built using ReactJS which uses
-                github jobs api to fetch jobs.
-              </p>
-              <div class="card__links">
-                <a
-                  href="https://leavitt-devjobs.netlify.app/"
-                  class="btn btn__md"
-                  ><i class="fas fa-link"></i>Live</a
-                >
-                <a
-                  href="https://github.com/sanket4120/devjobs"
-                  class="btn btn__md"
-                  ><i class="fab fa-github"></i>Source</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img src="./images/work/todo.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h4>ToDo</h4>
-              <p class="lang">ReactJS/HTML/CSS</p>
-              <p>
-                it's a todo list application which uses browsers local storage
-                to store todo's and it can filter todo's according to [active,
-                completed, all].
-              </p>
-              <div class="card__links">
-                <a href="https://reactapp-todo.netlify.app/" class="btn btn__md"
-                  ><i class="fas fa-link"></i>Live</a
-                >
-                <a
-                  href="https://github.com/sanket4120/react-todo"
-                  class="btn btn__md"
-                  ><i class="fab fa-github"></i>Source</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img src="./images/work/taste.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h4>Taste</h4>
-              <p class="lang">ReactJS/HTML/CSS</p>
-              <p>
-                It's an application which recommends tv shows according to
-                category.
-              </p>
-              <div class="card__links">
-                <a href="https://9ebx5.csb.app/" class="btn btn__md"
-                  ><i class="fas fa-link"></i>Live</a
-                >
-                <a
-                  href="https://github.com/sanket4120/taste"
-                  class="btn btn__md"
-                  ><i class="fab fa-github"></i>Source</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="view__all">
-            <a href="./work.html"
-              >view all <i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
+        <div class="mobile__links hide-lg">
+          <i class="fas fa-times pointer" id="menu-close"></i>
+          <ul>
+            <li><a href="./index.html" class="link">home</a></li>
+            <li><a href="./work.html" class="link">work</a></li>
+            <li><a href="./blog.html" class="link">blog</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -183,9 +69,9 @@
                 deleniti
               </p>
               <div class="card__links">
-                <a href="#" class="btn btn__md">Read More</a>
+                <a href="blogpost1.html" class="btn btn__md">Read More</a>
               </div>
-              <p>2h ago</p>
+              <p>Nov 26 | 6 min read</p>
             </div>
           </div>
           <div class="card">
@@ -200,9 +86,9 @@
                 deleniti
               </p>
               <div class="card__links">
-                <a href="#" class="btn btn__md">Read More</a>
+                <a href="./blogpost2.html" class="btn btn__md">Read More</a>
               </div>
-              <p>2h ago</p>
+              <p>Dec 1 | 8 min read</p>
             </div>
           </div>
           <div class="card">
@@ -217,15 +103,61 @@
                 deleniti
               </p>
               <div class="card__links">
-                <a href="#" class="btn btn__md">Read More</a>
+                <a href="./blogpost3.html" class="btn btn__md">Read More</a>
               </div>
-              <p>2h ago</p>
+              <p>Dec 6 | 4 min read</p>
             </div>
           </div>
-          <div class="view__all">
-            <a href="./blog.html"
-              >View All <i class="fas fa-chevron-right"></i
-            ></a>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/blog/img1.jpg" alt="blog image" />
+            </div>
+            <div class="card__info">
+              <p class="blog__type">Nature</p>
+              <h4>Blog Heading</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                deleniti
+              </p>
+              <div class="card__links">
+                <a href="blogpost1.html" class="btn btn__md">Read More</a>
+              </div>
+              <p>Nov 26 | 6 min read</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/blog/img2.jpg" alt="blog image" />
+            </div>
+            <div class="card__info">
+              <p class="blog__type">Technology</p>
+              <h4>Blog Heading</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                deleniti
+              </p>
+              <div class="card__links">
+                <a href="./blogpost2.html" class="btn btn__md">Read More</a>
+              </div>
+              <p>Dec 1 | 8 min read</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/blog/img3.jpg" alt="blog image" />
+            </div>
+            <div class="card__info">
+              <p class="blog__type">Photography</p>
+              <h4>Blog Heading</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                deleniti
+              </p>
+              <div class="card__links">
+                <a href="./blogpost3.html" class="btn btn__md">Read More</a>
+              </div>
+              <p>Dec 6 | 4 min read</p>
+            </div>
           </div>
         </div>
       </div>

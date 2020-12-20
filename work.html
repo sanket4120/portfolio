@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sanket | Work</title>
+    <title>sanket jadhav</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
@@ -21,194 +21,290 @@
     <div class="wrapper">
       <div class="container">
         <header>
-          <h2>Sanket</h2>
+          <h3>
+            <a href="/index.html">SJ<span class="highlight">.</span></a>
+          </h3>
           <nav class="hide-sm">
             <ul>
-              <li><a href="#about">about</a></li>
-              <li><a href="./work.html">work</a></li>
-              <li><a href="./index.html">blog</a></li>
+              <li><a href="./index.html" class="link">home</a></li>
+              <li><a href="./work.html" class="link">work</a></li>
+              <li><a href="./blog.html" class="link">blog</a></li>
             </ul>
           </nav>
-          <i class="fas fa-bars hide-lg" id="menu-open"></i>
+          <i class="fas fa-bars hide-lg pointer" id="menu-open"></i>
         </header>
+
+        <div class="mobile__links hide-lg">
+          <i class="fas fa-times pointer" id="menu-close"></i>
+          <ul>
+            <li><a href="./index.html" class="link">home</a></li>
+            <li><a href="./work.html" class="link">work</a></li>
+            <li><a href="./blog.html" class="link">blog</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="work">
       <div class="container">
-        <h2>Work</h2>
-        <div class="work__container">
-          <div class="work__card">
-            <h4>DEVJOBS</h4>
-            <p>Job listing site made using ReactJS and github jobs api.</p>
-            <div class="links">
-              <a href="https://leavitt-devjobs.netlify.app/"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/devjobs"
-                ><i class="fab fa-github"></i>Source</a
-              >
+        <h2>work</h2>
+        <div class="card__container">
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/devjobs.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>Devjobs</h4>
+              <p class="lang">ReactJS/HTML/CSS/API</p>
+              <p>
+                devjobs is a job listing site built using ReactJS which uses
+                github jobs api to fetch jobs.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://leavitt-devjobs.netlify.app/"
+                  class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/devjobs"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>React ToDo list</h4>
-            <p>
-              ToDo list built using ReactJs. It uses local storage to store
-              todo's.
-            </p>
-            <div class="links">
-              <a href="https://reactapp-todo.netlify.app/"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/react-todo"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/todo.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>ToDo</h4>
+              <p class="lang">ReactJS/HTML/CSS</p>
+              <p>
+                it's a todo list application which uses browsers local storage
+                to store todo's and it can filter todo's according to [active,
+                completed, all].
+              </p>
+              <div class="card__links">
+                <a href="https://reactapp-todo.netlify.app/" class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/react-todo"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>NoteKeeper</h4>
-            <p>
-              Note Keeping web app built using vanilla javascript.It uses
-              browsers local storage to store notes.
-            </p>
-            <div class="links">
-              <a href="https://keep-notekeeper.netlify.app/"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/NoteKeeper"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/taste.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>Taste</h4>
+              <p class="lang">ReactJS/HTML/CSS</p>
+              <p>
+                It's an application which recommends tv shows according to
+                category.
+              </p>
+              <div class="card__links">
+                <a href="https://9ebx5.csb.app/" class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/taste"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>Who Knows Me Better</h4>
-            <p>
-              This is a fun CLI Quiz app which can be shared with friends.Built
-              using nodejs to find out who knows you better.
-            </p>
-            <div class="links">
-              <a
-                href="https://repl.it/@07pranita/CLI-app?embed=1&output=1#index.js"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/who-knows-me-better"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/emojipedia.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>Emojipedia</h4>
+              <p class="lang">ReactJS/HTML/CSS</p>
+              <p>emoji meaning finder.</p>
+              <div class="card__links">
+                <a
+                  href="https://serene-leavitt-0276ec.netlify.app/"
+                  class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/Emojipedia"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>Movies Quiz</h4>
-            <p>
-              This is CLI Quiz app built using NodeJS.Quiz consist of 3 levels
-              and you need to clear each level to go to next level.
-            </p>
-            <div class="links">
-              <a
-                href="https://repl.it/@sanket4120/Movie-Quiz?embed=1&output=1#index.js"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/MovieQuiz"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/bananaTalk.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>Banana Talk</h4>
+              <p class="lang">HTML/CSS/JS/API</p>
+              <p>
+                It's a web app which translates English into Banana language
+                using funtranslations api.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://hungry-kilby-5688f3.netlify.app/"
+                  class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/BananaTalk"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>Banana Talk</h4>
-            <p>
-              This is simple vanilla javascript application which uses
-              funtranslation api to conver entered message into Minion's
-              language
-            </p>
-            <div class="links">
-              <a href="https://hungry-kilby-5688f3.netlify.app/"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/BananaTalk"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/pirateTalk.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>Pirate Talk</h4>
+              <p class="lang">HTML/CSS/JS/API</p>
+              <p>
+                web app which translates English into Pirate language using
+                funtranslations api.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://sleepy-perlman-c29d3f.netlify.app/"
+                  class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/PirateTalk"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>Pirate Talk</h4>
-            <p>
-              This is vanilla javascript application which uses funtranslation
-              api to conver entered message into Pirate's language
-            </p>
-            <div class="links">
-              <a href="https://sleepy-perlman-c29d3f.netlify.app/"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/PirateTalk"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/notekeeper.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>NoteKeeper</h4>
+              <p class="lang">HTML/CSS/JS</p>
+              <p>
+                note keeping application which uses browsers local storage to
+                store notes entered by user and it has options such [Update,
+                Filter, Delete].
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://keep-notekeeper.netlify.app/"
+                  class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/NoteKeeper"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>Emojipedia</h4>
-            <p>
-              Emojipedia is a web app built using ReactJS to know the meaning
-              emojis.
-            </p>
-            <div class="links">
-              <a href="https://serene-leavitt-0276ec.netlify.app/"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/Emojipedia"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/knowMe.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>Who knows me better</h4>
+              <p class="lang">NodeJS</p>
+              <p>
+                A CLI app built with NodeJS. You can send this to your friends
+                and find out who really knows you.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://repl.it/@sanket4120/who-konws-me-better?embed=1&output=1#index.js"
+                  class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/who-knows-me-better"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
-          <div class="work__card">
-            <h4>Taste</h4>
-            <p>
-              This is a web app built using ReactJS which recommends TV Shows
-              according to category.
-            </p>
-            <div class="links">
-              <a href="https://9ebx5.csb.app/"
-                ><i class="fas fa-link"></i>Live</a
-              >
-              <a href="https://github.com/sanket4120/taste"
-                ><i class="fab fa-github"></i>Source</a
-              >
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/work/movieQuiz.png" alt="" />
+            </div>
+            <div class="card__info">
+              <h4>MovieQuiz</h4>
+              <p class="lang">NodeJS</p>
+              <p>
+                A CLI app built with NodeJS.This is a 3 level movie quiz having
+                questions on 3 popular movies 3 idiots, Avengers Infinity War,
+                Inception having some rules. You can share this with your
+                friends and play with them.
+              </p>
+              <div class="card__links">
+                <a
+                  href="https://repl.it/@sanket4120/Movie-Quiz?embed=1&output=1#index.js"
+                  class="btn btn__md"
+                  ><i class="fas fa-link"></i>Live</a
+                >
+                <a
+                  href="https://github.com/sanket4120/MovieQuiz"
+                  class="btn btn__md"
+                  ><i class="fab fa-github"></i>Source</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="mobile__links hide-lg">
-      <i class="fas fa-times" id="menu-close"></i>
-      <ul>
-        <li><a href="">about</a></li>
-        <li><a href="">work</a></li>
-        <li><a href="">blog</a></li>
-      </ul>
-    </div>
-
     <footer>
-      <h3>Let's Work Together</h3>
-      <p>
-        I don't work for people, I collaborate with them. Sound like you? Let’s
-        talk!
-      </p>
-      <div class="social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/sanket4120"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+      <div class="container">
+        <h3>Let's Work Together</h3>
+        <p>
+          I don't work for people, I collaborate with them. Sound like you?
+          Let’s talk!
+        </p>
+        <div class="social">
+          <a href="mailto:jadhavsanket4120@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sanket4120"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
     </footer>
 
     <div class="copyright">
-      <p>
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        Sanket Jadhav
-      </p>
+      <div class="container">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Sanket Jadhav
+        </p>
+      </div>
     </div>
 
     <script src="./js/app.js"></script>

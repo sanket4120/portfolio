@@ -1,3 +1,8 @@
+:root {
+  --bg1: #323232;
+  --bg2: #252525;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +20,10 @@ a {
   cursor: pointer;
 }
 
+i {
+  margin: 0 5px;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -23,6 +32,45 @@ a {
 .highlight {
   color: blueviolet;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.link {
+  color: #fff;
+  position: relative;
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: blueviolet;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.btn {
+  color: #fff;
+  background: blueviolet;
+  border-radius: 3px;
+}
+
+.btn__lg {
+  padding: 10px 30px;
+}
+
+.btn__md {
+  padding: 5px 15px;
+}
+
 a {
   color: #fff;
 }
@@ -37,11 +85,11 @@ h2 {
   font-weight: 500;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 500;
 }
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 p {
@@ -74,7 +122,8 @@ body {
 
 /* -----header----- */
 .wrapper {
-  background-color: #1b262c;
+  /* background-color: #1b262c; */
+  background-color: var(--bg1);
 }
 
 header {
@@ -96,18 +145,20 @@ nav ul li {
 
 .mobile__links {
   position: absolute;
-  right: 0;
-  top: 0;
+  width: 60%;
+  border-radius: 5px;
+  left: 50%;
+  top: 15vh;
+  transform: translateX(-50%);
   z-index: 10;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  color: blueviolet;
+  background-color: var(--bg2);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 3rem;
+  padding: 2.5rem 0;
+}
+
+.mobile__links ul {
+  text-align: center;
 }
 
 .mobile__links ul li {
@@ -116,13 +167,8 @@ nav ul li {
 
 #menu-close {
   position: absolute;
-  top: 5vh;
-  right: 2.5rem;
-  cursor: pointer;
-}
-
-.mobile__links a {
-  color: blueviolet;
+  right: 20px;
+  top: 20px;
 }
 
 .hide-lg {
@@ -143,16 +189,13 @@ nav ul li {
   height: 90vh;
   width: 50%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 20vh;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1047px) {
   .intro {
     width: 95%;
-    text-align: center;
   }
 }
 
@@ -160,16 +203,10 @@ nav ul li {
   margin-bottom: 2rem;
 }
 
-#about-me {
-  background: blueviolet;
-  padding: 10px 30px;
-  border-radius: 30px;
-}
-
 /* -----about----- */
 
 .about {
-  background-color: #2a3b44;
+  background-color: var(--bg2);
   text-align: center;
   padding: 5rem 0;
 }
@@ -189,33 +226,66 @@ h4 {
 
 .skills span {
   display: inline-block;
-  background: blueviolet;
-  padding: 5px 15px;
-  border-radius: 30px;
   margin: 0.5rem 1rem;
 }
 
-/* --------work--------- */
+/* --------work--------- && -----------blog----------- */
 
-.work {
-  background: #1b262c;
+.work,
+.blog {
   padding: 5rem 0;
 }
 
-.work h2 {
+.work {
+  background-color: var(--bg1);
+}
+
+.blog {
+  background-color: var(--bg2);
+}
+
+.work h2,
+.blog h2 {
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
-.work__container {
+.lang {
+  margin-bottom: 10px;
+}
+
+.card__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
-.work__card,
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.work .card,
+.work .view__all {
+  background-color: var(--bg2);
+}
+
+.blog .card,
+.blog .view__all {
+  background-color: var(--bg1);
+}
+
+.card,
 .view__all {
-  background-color: #2a3b44;
   padding: 1rem 2rem;
   border-radius: 5px;
 }
@@ -224,91 +294,37 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: lowercase;
 }
 
 .view__all i {
   color: blueviolet;
 }
 
-.links a {
+.card__links a {
   display: inline-block;
-  background: blueviolet;
-  padding: 5px 15px;
-  border-radius: 30px;
   margin: 1rem;
   margin-left: 0;
 }
 
-.links a i {
-  margin-right: 5px;
+.blog__type {
+  border-bottom: 2px blueviolet solid;
+  display: inline-block;
 }
 
-@media only screen and (max-width: 800px) {
-  .work__container {
+@media only screen and (max-width: 1150px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 760px) {
+  .card__container {
     grid-template-columns: 1fr;
   }
 }
 
-/* ------blog--------- */
-.blog {
-  background: #2a3b44;
-  padding: 5rem 0;
-}
-
-.blog h2 {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.blog__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
-.blog__card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.blog__card,
-.blog__container .view__all {
-  background-color: #1b262c;
-}
-
-.blog__card {
-  padding-bottom: 1rem;
-  border-radius: 5px;
-}
-
-.blog__card h4,
-.blog__card p,
-.blog__card a {
-  margin: 0 0.7rem;
-}
-
-.blog__card .title {
-  background: blueviolet;
-  padding: 5px 15px;
-  border-radius: 30px;
-  display: inline-block;
-  margin: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.blog__card a {
-  display: inline-block;
-  color: blueviolet;
-  margin: 0.8rem;
-}
-
-@media only screen and (max-width: 750px) {
-  .blog__container {
-    grid-template-columns: 1fr;
-  }
-}
+/* ------footer--------- */
 
 footer,
 footer a {
