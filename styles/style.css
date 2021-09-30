@@ -12,6 +12,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+code {
+  font-family: consolas;
+  font-size: large;
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
