@@ -54,18 +54,12 @@
         </div>
         <img class="blog__image" src="./images/blog/git.png" alt="blog image" />
         <div class="blog__info">
-          <p class="blog__para">
-            To simplify working with git on a command line, I have put together
-            a list of common git commands, the meaning of each command, and how
-            to use them. I hope this will make working with git easier.
-          </p>
           <h4 class="blog__subheading">Working with local repositories</h4>
           <h4 class="blog__subheading">1. git init</h4>
           <p class="blog__para">
-            The git init command is the first command that you will run on Git.
             The git init command is used to create a new blank repository. It is
             used to make an existing project as a Git project. After running git
-            init, adding and committing files/directories is possible.
+            init, adding and committing files is possible.
           </p>
           <p class="blog__para">
             Usage:<br />
@@ -75,11 +69,12 @@
           <h4 class="blog__subheading">2. git add</h4>
           <p class="blog__para"></p>
             Adds files in the to the staging area for Git. 
-            It tells Git that you want to include updates to a particular file in the next commit.
-            Before a file is
-            available to commit to a repository, the file needs to be added to
-            the staging area. There are a few different ways to use
-            git add, by adding entire directories, specific files, or all
+            The file needs to be added in a staging area 
+            before it is
+            available to commit to a repository.
+            It tells Git that you want to include particular file in the next commit.
+            There are a few different ways to use
+            git add, file can be added to staging area by adding entire directories, specific files, or all
             unstaged files.
           </p>
           <p class="blog__para">
@@ -91,8 +86,8 @@
           <p class="blog__para">
             Record the changes made to the files to a local repository. For easy
             reference, each commit has a unique ID. It’s best practice to
-            include a message with each commit explaining the changes made in a
-            commit. Adding a commit message helps to find a particular change or
+            add a message with each commit which will explain the changes made in a
+            commit. Adding a commit message helps in
             understanding the changes.
           </p>
           <p class="blog__para">
@@ -102,8 +97,7 @@
 
           <h4 class="blog__subheading">4. git status</h4>
           <p class="blog__para">
-            This command returns the current state of the repository. git status
-            will return the current working branch. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
+            This command returns the current state of the repository. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
           </p>
           <p class="blog__para">
             Usage:<br />
@@ -112,7 +106,7 @@
 
           <h4 class="blog__subheading">5. git branch</h4>
           <p class="blog__para">
-            A branch represents an independent line of development. The git branch command lets you create, list, and delete branches.
+            A branch represents an independent line of development. Using git branch one can create, list, and delete branches.
           </p>
           <p class="blog__para">
             Usage:<br />
@@ -126,8 +120,7 @@
 
           <h4 class="blog__subheading">5. git checkout</h4>
           <p class="blog__para">
-            To start working in a different branch, use git checkout to switch
-            branches.
+            To switch among the different branches available git checkout is used.
           </p>
           <p class="blog__para">
             Usage:<br />
@@ -139,9 +132,8 @@
 
           <h4 class="blog__subheading">5. git merge</h4>
           <p class="blog__para">
-            Integrate branches together. git merge combines the changes from one
-            branch to another branch. For example, merge the changes made in a
-            staging branch into the stable branch.
+            Merge branches together. git merge combines the changes from one
+            branch to another branch.
           </p>
           <p class="blog__para">
             Usage:<br />
