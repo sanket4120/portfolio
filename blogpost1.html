@@ -54,11 +54,13 @@
         </div>
         <img class="blog__image" src="./images/blog/git.png" alt="blog image" />
         <div class="blog__info">
+          <p class="blog__para">Here is a list of common git commands to get you going with Git</p>
+          
           <h4 class="blog__subheading">Working with local repositories</h4>
+          
           <h4 class="blog__subheading">1. git init</h4>
           <p class="blog__para">
-            The git init command is used to create a new blank repository. It is
-            used to make an existing project as a Git project. After running git
+            It is usually the first command which you'd run in any new project which is not already a git repository. It will create a new blank repository. After running git
             init, adding and committing files is possible.
           </p>
           <p class="blog__para">
@@ -69,25 +71,22 @@
           <h4 class="blog__subheading">2. git add</h4>
           <p class="blog__para"></p>
             Adds files in the to the staging area for Git. 
-            The file needs to be added in a staging area 
-            before it is
-            available to commit to a repository.
+            Whenever you create/delete/edit some file you'll have to tell git to track and add it to staging area. Otherwise, when you try to push changes to the staging area the file in which you made chages will not be added.
             It tells Git that you want to include particular file in the next commit.
-            There are a few different ways to use
-            git add, file can be added to staging area by adding entire directories, specific files, or all
-            unstaged files.
           </p>
           <p class="blog__para">
             Usage:<br />
-            <code>git add file/directory_name</code>
+            <code># Add only single file to your next commit</code>
+            <code>git add "fileName"</code>
+            <code># Add all the files to which changes were made</code>
+            <code>git add -A</code>
           </p>
 
           <h4 class="blog__subheading">3. git commit</h4>
           <p class="blog__para">
-            Record the changes made to the files to a local repository. For easy
-            reference, each commit has a unique ID. It’s best practice to
-            add a message with each commit which will explain the changes made in a
-            commit. Adding a commit message helps in
+            It is commonly used to save your changes.
+             It’s best practice to include a message with each commit which will briefly describe the changes made in
+            commit. Adding a commit message helps yourself and other team members in
             understanding the changes.
           </p>
           <p class="blog__para">
@@ -97,7 +96,8 @@
 
           <h4 class="blog__subheading">4. git status</h4>
           <p class="blog__para">
-            This command returns the current state of the repository. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
+            It returns current branch and state of branch. 
+             It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
           </p>
           <p class="blog__para">
             Usage:<br />
@@ -106,6 +106,7 @@
 
           <h4 class="blog__subheading">5. git branch</h4>
           <p class="blog__para">
+            It is one of the important functionalities of git which allows teams to work on same code base in parallel.
             A branch represents an independent line of development. Using git branch one can create, list, and delete branches.
           </p>
           <p class="blog__para">
@@ -160,7 +161,7 @@
 
           <h4 class="blog__subheading">2. git clone</h4>
           <p class="blog__para">
-            git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository.
+            It is a command line utility which is used to download a source code from a remote repository.
           </p>
           <p class="blog__para">
             Usage:<br />
